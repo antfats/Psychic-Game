@@ -2,8 +2,10 @@
 <html lang="en">
 
 <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
         integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,24 +24,65 @@
             <p>Guess what letter I'm thinking of.</p>
         </div>
     </div>
+    <div class="row">
+        <div class="col-md-12">
+            <!--ID For the jscript!-->
+            <p id="wins">Wins: </p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <p id="losses">Losses: </p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <p id="#"></p>
+            <!--Once i implement tries, will go here-->
+        </div>
+    </div>
 
-    <script>
-        var wins = 0;
-        var losses = 0;
-        var guesses = 10;
-        var alphabet = "abcdefghijklmnopqrstuvwxyz";
-        var getRandomLetter = alphabet[Math.floor(Math.random() * alphabet.length)];
-        var compGuess;
-        var userGuess;
+    <script src="assets/javascript/game.js">
+        // var wins = 0;
+        // var losses = 0;
+        // var guesses = 10;
+        // var letter = letters[Math.floor(Math.random() * letters.length)];
+        // var compGuess;
+        // var userGuess;
 
-        function computerGuess() {
-            document.getElementById(getRandomLetter);
-            compGuess = compGuess + getRandomLetter;
-            computerGuess;
-            console.log(compGuess);
-            return;
-            
-        }
+        //the computer guesses a random letter and stores that to a variable called compGuess
+        //user input
+
+        // $(document).ready(function () {
+        //     for (var i = 0; i < letters.length; i++) {
+        //         var userGuess = prompt("Input a letter");
+        //         compGuess = letter;
+        //         console.log(userGuess);
+        //         console.log(compGuess);
+
+
+        //     }
+
+        //     if (userGuess == compGuess) {
+
+        //         wins++;
+        //         console.log("Wow how did you guess that!?!??");
+        //         console.log(wins);
+        //         $("#wins").text("Wins: ", wins);
+
+        //     }
+        //     else {
+        //         $(losses) === losses++;
+        //         console.log("You suck!");
+
+
+        //     }
+
+        // });
+
+
+            // if the player presses the button, compare that letter to the computer chosen letter
+
 
 
 
