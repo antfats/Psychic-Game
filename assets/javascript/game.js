@@ -5,7 +5,6 @@
 $(document).ready(); {
     var wins = 0;
     var losses = 0;
-    var guesses = 10;
     var alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l',
         'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
 
@@ -20,17 +19,21 @@ $(document).ready(); {
         $("#guesses").append(userGuess);
         $("#compGuess").append(computerGuess);
 
-    }
+    
     //win/lose conditions
 
     if (userGuess === computerGuess){
         alert("YOU WIN!!!");
         wins++;
+        $("#wins").text("Wins: "+wins);
 
-
-
+    
+    }
+    else (userGuess != computerGuess); {
+        losses++;
+        $("#losses").text("Losses: "+losses);
+        
+        }
 
     }
-
-
 }
